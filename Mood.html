@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mood Movie Recommender</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="Mood.css" />
+  </head>
+  <body>
+    <div class="container">
+      <img
+        src="https://m.media-amazon.com/images/G/01/digital/video/merch/subs/benefit-id/m-r/Prime/logos/channels-logo-color._CB554929912_SY52.5_FMwebp_.png"
+        alt="Prime Video Logo"
+        style="position: absolute; top: 10px; left: 10px; width: 50px"
+      />
+      <br />
+      <br />
+      <h1 style="font-size: 1.1rem; text-align: center">
+        Smile from, or just stare
+      </h1>
+      <h1 style="font-size: 1.1rem; text-align: center">
+        We will read your face
+      </h1>
+      <br />
+      <video id="video" autoplay muted></video>
+      <div id="scan-bar"></div>
+      <button id="detectMood">Check My Mood</button>
+      <div class="manual-select" onclick="showMoodSelector()">
+        No Pic? No problem! Choose your mood
+      </div>
+      <div id="result" class="movie-result"></div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/gsap.min.js"></script>
+    <script src="Mood.js"></script>
+  </body>
+</html>
